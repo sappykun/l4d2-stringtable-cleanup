@@ -1,0 +1,59 @@
+"Games"
+{
+	"#default"
+	{
+		"Signatures"
+		{
+			"CNetworkStringTable::AddString"
+			{
+				"library"	"engine"
+				"windows" 	"\x55\x89\xE5\x57\x56\x53\x83\xEC\x2C\x8B\x75\x10\x8B\x5D\x08"
+				"linux" 	"@_ZN19CNetworkStringTable9AddStringEbPKciPKv"
+				"mac" 		"@_ZN19CNetworkStringTable9AddStringEbPKciPKv"
+			}
+			"CEngineSoundServer::PrecacheSound"
+			{
+				"library"	"engine"
+				"windows"	"\x55\x89\xE5\x56\x53\x83\xEC\x10\x8B\x5D\x0C\x8B\x75\x10\x85\xDB\x74\x2A"
+				"linux" 	"@_ZN18CEngineSoundServer13PrecacheSoundEPKcbb"
+				"mac"		"@_ZN18CEngineSoundServer13PrecacheSoundEPKcbb"
+			}
+		}
+		"Functions"
+		{
+			"CNetworkStringTable::AddString"
+			{
+				"signature" "CNetworkStringTable::AddString"
+				"callconv" "thiscall"
+				"this" "address"
+				"return" "int"
+				"arguments"
+				{
+					"bIsServer"
+					{
+						"type" "bool"
+					}
+					"string"
+					{
+						"type" "charptr"
+					}
+					"length"
+					{
+						"type" "int"
+					}
+					"userdata"
+					{
+						"type" "int"
+					}
+				}
+			}
+			"CEngineSoundServer::PrecacheSound"
+			{
+				"signature" "CEngineSoundServer::PrecacheSound"
+				"callconv" "thiscall"
+				"this" "ignore"
+				"return" "bool"
+			}
+		}
+	}
+}
