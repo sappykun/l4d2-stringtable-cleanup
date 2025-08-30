@@ -11,13 +11,6 @@
 				"linux" 	"@_ZN19CNetworkStringTable9AddStringEbPKciPKv"
 				"mac" 		"@_ZN19CNetworkStringTable9AddStringEbPKciPKv"
 			}
-			"CEngineSoundServer::PrecacheSound"
-			{
-				"library"	"engine"
-				"windows"	"\x55\x89\xE5\x56\x53\x83\xEC\x10\x8B\x5D\x0C\x8B\x75\x10\x85\xDB\x74\x2A"
-				"linux" 	"@_ZN18CEngineSoundServer13PrecacheSoundEPKcbb"
-				"mac"		"@_ZN18CEngineSoundServer13PrecacheSoundEPKcbb"
-			}
 		}
 		"Functions"
 		{
@@ -46,13 +39,6 @@
 						"type" "int"
 					}
 				}
-			}
-			"CEngineSoundServer::PrecacheSound"
-			{
-				"signature" "CEngineSoundServer::PrecacheSound"
-				"callconv" "thiscall"
-				"this" "ignore"
-				"return" "bool"
 			}
 		}
 	}
