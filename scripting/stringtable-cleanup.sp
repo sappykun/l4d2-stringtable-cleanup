@@ -13,9 +13,9 @@ ArrayList g_Filenames;
 
 public Plugin myinfo =
 {
-	name		= "L4D2 Stringtable Cleanup",
+	name		= "Stringtable Cleanup",
 	author	  = "Sappykun",
-	description = "Prevents clutter in L4D2's stringtables",
+	description = "Prevents clutter in Source's stringtables",
 	version	 = "1.0.0"
 };
 
@@ -25,8 +25,8 @@ public void OnPluginStart()
 	cvar_EnableDownloadablesBlock = CreateConVar("stringtablecleanup_downloadablesblock_enabled", "1", "Prevents the downloadables table from being populated with vanilla assets", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	cvar_EnableModelPrecacheCheck = CreateConVar("stringtablecleanup_modelprecachecheck_enabled", "0",	"Enables the modelprecache table check, not recommended\n\t0 - Disabled\n\t1 - Print warning to console when an invalid file is added to the modelprecache table\n\t2 - Block invalid files from being added to the modelprecache table; this will most likely crash your server", FCVAR_NOTIFY, true, 0.0, true, 2.0);
 
-	Handle conf = LoadGameConfigFile("l4d2.stringtablecleanup");
-	if (conf == null) SetFailState("Failed to load gamedata/l4d2.stringtablecleanup.txt");
+	Handle conf = LoadGameConfigFile("stringtablecleanup");
+	if (conf == null) SetFailState("Failed to load gamedata/stringtablecleanup.txt");
 
 	dhook_AddString = DynamicHook.FromConf(conf, "CNetworkStringTable::AddString");
 	if (dhook_AddString == null) SetFailState("Failed to create dhook_AddString");
