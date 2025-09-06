@@ -4,7 +4,7 @@ Prevents clutter from being added to stringtables in a Source engine game.  If y
 
 The aforementioned error appears when the uncompressed packet size exceeds a certain size, like 2 MB.  That, or it's a compressed 200 kB limit. Not entirely sure.  At any rate, the best way to fix the issue aside from this plugin is to cut down on things you add to the stringtables - shortening downloadable filenames helps a lot.
 
-Only tested in L4D2, still very experimental. Your mileage may vary with other games.
+Only tested in L4D2, still very experimental. Your mileage may vary with other games.  For example, blocking entries in the Scenes stringtable in TF2 completely breaks taunt animations, so this plugin isn't recommended for TF2.
 
 ## CVARS
 
